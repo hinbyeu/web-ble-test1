@@ -40,7 +40,7 @@
                 <h2>Control DoorLock</h2>
                 <button id="onButton" class="onButton">OPEN</button>
                 <button id="offButton" class="offButton">CLOSE</button>
-                <button id="bleChangeButton" class="bleChangeButton">BLE_ON</button>
+                <button id="bleChangeButton" class="bleChangeButton">BLE_ONF</button>
                 <p class="gray-label">Last value sent: <span id="valueSent"></span></p>
             </div>
         </div>
@@ -63,10 +63,16 @@
     const timestampContainer = document.getElementById('timestamp');
 
     //Define BLE Device Specs
-    var deviceName ='KeyIN_BLE_OTA';
-    var bleService = '19b10000-e8f2-537e-4f6c-d104768a1214';
-    var ledCharacteristic = '19b10002-e8f2-537e-4f6c-d104768a1214';
-    var sensorCharacteristic= '19b10001-e8f2-537e-4f6c-d104768a1214';
+    // var deviceName ='KeyIN_BLE_OTA';
+    // var bleService = '19b10000-e8f2-537e-4f6c-d104768a1214';
+    // var ledCharacteristic = '19b10002-e8f2-537e-4f6c-d104768a1214';
+    // var sensorCharacteristic= '19b10001-e8f2-537e-4f6c-d104768a1214';
+
+       // var deviceName ='KeyIN_BLE_OTA';
+    var bleService = '00008018-0000-1000-8000-00805f9b34fb';
+    var ledCharacteristic = '00008020-0000-1000-8000-00805f9b34fb';
+    var sensorCharacteristic= '00008022-0000-1000-8000-00805f9b34fb';
+
 
     //Global Variables to Handle Bluetooth
     var bleServer;
