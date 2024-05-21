@@ -46,6 +46,10 @@ button {
     background-color: #5f6c6d;
 }
 
+.bleChangeButton{
+    background-color: #3f2c6d;
+}
+
 .connectButton{
     background-color: #24af37;
 }
